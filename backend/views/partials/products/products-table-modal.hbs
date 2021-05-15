@@ -1,0 +1,39 @@
+{{#each products class="order"}}
+
+<div class="modal fade" id="updateOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Update Order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="http://localhost:7000/orders/{{this._id}}/update" method="POST">
+                    <div class="form-group">
+                        <label for="status">Status</label>
+                        <input type="text" class="form-control statusField" placeholder="Status" name="statusUpdate">
+                    </div>
+                    <div class="form-group">
+                        <label for="customer">Customer</label>
+                        <input type="text" class="form-control customerField" placeholder="Customer Name" name="customerUpdate">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="purchased">Purchased</label>
+                            <input type="text" class="form-control purchaseField" name="purchasedUpdate">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="total">Total</label>
+                            <input type="number" class="form-control totalField" name="totalUpdate">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary putOrder" order-id={{this._id}}>Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{/each}}

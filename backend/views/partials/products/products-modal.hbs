@@ -1,0 +1,55 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Create Order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="http://localhost:5000/products" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="orderDate">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name of Product"  name="name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Brand</label>
+                        <input type="text" class="form-control" id="brand" placeholder="Brand" name="brand">
+                    </div>
+                    <div class="form-group">
+                        <label for="customer">Category</label>
+                        <input type="text" class="form-control" id="category" placeholder="Category" name="category">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="orderDate">Stock</label>
+                            <input type="text" class="form-control" id="stock" placeholder="Stock" name="countInStock">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="status">Sku</label>
+                        <input type="text" class="form-control" id="sku" placeholder="SKU" name="sku">
+                    </div>
+                    {{!-- <div class="form-group">
+                        <label for="customer">Category</label>
+                        <input type="text" class="form-control" id="category" placeholder="Number of Reviews" name="numReviews">
+                    </div> --}}
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="purchased">Description</label>
+                            <input type="text" class="form-control" id="description" name="description">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="total">Price</label>
+                            <input type="text" class="form-control" id="price" name="price">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

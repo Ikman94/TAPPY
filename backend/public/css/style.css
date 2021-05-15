@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(245, 246, 250);
+  width: 100%;
+  /* height: 100vh; */
+  /* overflow: scroll; */
+}
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+.body {
+  overflow: scroll;
+  height: 90vh;
+}
+.support-scroll {
+  overflow: scroll;
+  height: 80vh;
+}
+.support1-scroll {
+  overflow: scroll;
+  height: 65vh;
+}
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.row.no-gutter [class*="col-"]:not(:first-child),
+.row.no-gutter [class*="col-"]:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navigation {
+  height: 100vh;
+  background-color: white;
+}
+.navigation img {
+  width: 55%;
+}
+.navigation ul li {
+  list-style: none;
+  /* margin: 2rem; */
+  padding: 1rem;
+}
+.navigation ul li:hover {
+  background-color: rgb(245, 246, 250);
+  border: 1px solid rgb(245, 246, 250);
+}
+.navigation ul li a {
+  color: rgb(82, 101, 132);
+  font-size: 17px;
+  text-decoration: none;
+}
+.nav-header input {
+  width: 50%;
+}
+
+.nav-header-right .fa {
+  width: 20px;
+}
+/* .fa-user {
+  background-color: rgb(154, 111, 251);
+  color: white;
+} */
+.layer {
+  background-color: rgb(245, 246, 250);
+}
+.cards {
+  margin-left: 2.5rem;
+}
+.purpleCard {
+  background-color: rgb(58, 34, 114);
+  width: 32rem;
+  height: 23rem;
+}
+.card1 {
+  padding: 1.3rem;
+}
+
+.purpleCard img {
+  width: 100%;
+}
+.avgOrder {
+  width: 32rem;
+  height: 23rem;
+  background-color: white;
+  background-clip: content-box;
+}
+.avgOrder img {
+  width: 91%;
+  margin-left: 2.5rem;
+}
+.card2 {
+  background-color: white;
+  width: 32rem;
+  height: 10rem;
+  padding: 1.3rem;
+}
+.card3 {
+  width: 32rem;
+}
+.card4 {
+  width: 32rem;
+}
+.input1 {
+  width: 12rem;
+}
+.input1 input {
+  border: none;
+}
+.input2 {
+  height: 2.4rem;
+}
+.purple {
+  color: rgb(154, 111, 251);
+}
+
+.span {
+  border: 1px solid;
+  border-radius: 50%;
+  font-size: 12px;
+  margin-right: 8px;
+  padding: 5px;
+}
+.card3 img {
+  width: 3rem;
+  height: 3rem;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.select1 select {
+  width: 6.5rem;
+  height: 2.4rem;
+  padding: 8px;
+  margin-right: 10px;
+  background-color: white;
+}
+.button1 button {
+  width: 10rem;
+  height: 2.4rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(154, 111, 251);
+  color: white;
+  font-size: 14px;
+  padding: 8px;
+}
+.border1 {
+  width: 10px;
+  color: rgb(244, 191, 49);
+  background-color: rgb(254, 246, 219);
+  border: 1px solid rgb(254, 246, 219);
+  padding: 5px 20px 5px 20px;
+  border-radius: 25px;
+  font-weight: bolder;
+}
+.border2 {
+  width: 10px;
+  color: rgb(104, 227, 178);
+  background-color: rgb(221, 250, 243);
+  border: 1px solid rgb(221, 250, 243);
+  padding: 5px 14px 5px 16px;
+  border-radius: 25px;
+  font-weight: bolder;
+}
+.button2 {
+  font-size: 0;
+}
+.button2 button {
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  border: 0.9px solid grey;
+  padding: 2px;
+  font-size: small;
+}
+.select2 select {
+  width: 3.5rem;
+  padding: 0px 10px 0px 10px;
+}
+th select {
+  appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  background-color: white;
+  padding-left: 30px;
+}
+th select:hover {
+  background-color: rgb(235, 238, 243);
+  border: 1px solid rgb(235, 238, 243);
+}
+th img {
+  width: 50px;
+  height: 50px;
+}
+/* table header */
+.check-box-width {
+  width: 3rem;
+}
+.th-img-border {
+  width: 20rem;
+}
+.box-width{
+  width: 6rem;
+}
+.category-width{
+  width: 10rem;
+}
+
+/* table header */
+.customer-initial {
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: rgb(154, 111, 251);
+  font-size: 14px;
+  margin-right: 8px;
+  padding: 10px;
+}
+.customer-initial .fa-user {
+  color: white;
+}
+.customer-img img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid inherit;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.status-width {
+  width: 6rem;
+}
+.hide {
+  visibility: hidden;
+}
+.fa-camera-retro {
+  display: none;
+}
+.myDIV:hover + .hide {
+  color: red;
+  visibility: visible;
+  /* position: absolute; */
+  /* z-index: 10; */
+}
+.support-initial {
+  height: 3rem;
+}
+.input-search a {
+  width: 5px;
+  margin-left: -10px;
+}
+.card-body-input input {
+  width: 35.5rem;
+  height: 2.3rem;
+  font-size: 14px;
+  padding-left: 10px;
+  border: 1px solid grey;
+}
+.card-body input::placeholder {
+  font-size: 13px;
+  padding-left: 10px;
+  color: black;
+}
+.card-body-radio input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin: 0px 10px 0px 10px;
+}
+.settings button {
+  background-color: rgb(133, 82, 252);
+  color: white;
+  font-size: 15px;
+}
+.card-body select {
+  width: 30px;
+  height: 30px;
+  appearance: none;
+  text-indent: 1px;
+  background-color: grey;
+}
+.support-letter p {
+  font-size: 13px;
+}
+.line-word p {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid rgb(235, 238, 243);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.line-word p span {
+  background: #fff;
+  padding: 0 10px;
+}
+.color {
+  background-color: rgb(245, 246, 250);
+}
+/* switch */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 17px;
+  width: 17px;
+  left: 10px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(133, 82, 252);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(133, 82, 252);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

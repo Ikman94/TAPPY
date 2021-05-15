@@ -1,0 +1,38 @@
+{{#each products class="order"}}
+<table class="table bg-white rounded">
+    <tbody>
+        <tr class="mb-4">
+            <th scope="col" class="check-box-width "><input type="checkbox" class=""></th>
+            <th scope="row" class="border-left border-light  th-img-border"><small class=" "> {{this.name}} </small></th>
+            <td class="border-left border-light  box-width"><small class="text-secondary  "> {{this.sku}} </small></td>
+            <td class="border-left border-light  box-width"><small class=" font-weight-bold  "> ₦{{this.price}} </small></td>
+            <td class="border-left border-light text-secondary  box-width"><small class=" "> {{this.countInStock}} </small>
+            <th scope="row" class="border-left border-light  category-width"><small class=" "> {{this.category}} </small></th>
+            <td class="border-left border-light  box-width"><small class=" "> 2 stars </td>
+            {{!-- <th scope="col" class="border-left border-light box-width">
+                <small>
+                    <select name="cars" class="text-secondary border-0 box-width">
+                        <option value="" selected disabled>•••</option>
+                        <option value="volvo">On Hold</option>
+                        <option value="saab">Delivered</option>
+                        <option value="mercedes">Rejected</option>
+                    </select>
+                </small>
+            </th> --}}
+            <th class="border-left border-light  box-width">
+                <small>
+                    <form class="" action="http://localhost:7000/orders/{{this._id}}/delete" method="POST">
+                        <button type="submit" class="btn btn-sm btn-outline-danger deleteOrder"><i class="fa fa-trash" aria-hidden="true"> </i></button>
+                    </form>
+                </small>
+            </th>
+            <th>
+                <small>
+                    <a href="" role="button" class="btn mr-2 btn-outline-info btn-sm updateOrder" id="putOrder" data-toggle="modal" data-target="#updateOrder" updateOrder={{this._id}}><i class="fa fa-pencil" aria-hidden="true"> </i></a>
+                </small>
+            </th>
+        </tr>
+    </tbody>
+</table>
+
+{{/each}}
